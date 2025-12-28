@@ -343,6 +343,100 @@ export default function Index() {
             </div>
           </div>
 
+          <Separator className="my-12" />
+
+          <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            <div>
+              <h3 className="font-heading text-2xl font-bold mb-6">Форма обратной связи</h3>
+              <form className="space-y-4">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium mb-2">
+                    Ваше имя
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    className="w-full px-4 py-3 rounded-lg bg-card border-2 border-border focus:border-primary outline-none transition-colors"
+                    placeholder="Введите ваше имя"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium mb-2">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    className="w-full px-4 py-3 rounded-lg bg-card border-2 border-border focus:border-primary outline-none transition-colors"
+                    placeholder="your@email.com"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium mb-2">
+                    Телефон
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    className="w-full px-4 py-3 rounded-lg bg-card border-2 border-border focus:border-primary outline-none transition-colors"
+                    placeholder="+7 (999) 123-45-67"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium mb-2">
+                    Сообщение
+                  </label>
+                  <textarea
+                    id="message"
+                    rows={4}
+                    className="w-full px-4 py-3 rounded-lg bg-card border-2 border-border focus:border-primary outline-none transition-colors resize-none"
+                    placeholder="Напишите ваше сообщение..."
+                  />
+                </div>
+                <Button type="submit" className="w-full gap-2" size="lg">
+                  <Icon name="Send" size={20} />
+                  Отправить сообщение
+                </Button>
+              </form>
+            </div>
+
+            <div>
+              <h3 className="font-heading text-2xl font-bold mb-6">Наш офис</h3>
+              <div className="space-y-4 mb-6">
+                <div className="flex items-start gap-3">
+                  <Icon name="MapPin" size={20} className="text-primary mt-1" />
+                  <div>
+                    <p className="font-medium">Адрес</p>
+                    <p className="text-muted-foreground">г. Москва, ул. Ленина, д. 42, офис 15</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="Clock" size={20} className="text-primary mt-1" />
+                  <div>
+                    <p className="font-medium">Время работы</p>
+                    <p className="text-muted-foreground">Пн-Пт: 10:00 - 19:00</p>
+                    <p className="text-muted-foreground">Сб-Вс: 11:00 - 17:00</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="aspect-video rounded-lg overflow-hidden border-2 border-border">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.4086487451614!2d37.61756431592478!3d55.75582998055675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0xa886bf5a3d9b2e68!2z0JrRgNCw0YHQvdCw0Y8g0L_Qu9C-0YnQsNC00Yw!5e0!3m2!1sru!2sru!4v1234567890123!5m2!1sru!2sru"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Карта офиса Librejokes"
+                />
+              </div>
+            </div>
+          </div>
+
+          <Separator className="my-12" />
+
           <div className="text-center">
             <p className="text-muted-foreground mb-4">Мы в социальных сетях</p>
             <div className="flex items-center justify-center gap-4">
