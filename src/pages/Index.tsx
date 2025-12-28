@@ -146,9 +146,16 @@ export default function Index() {
       <header className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b-2 border-primary">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="font-heading text-2xl md:text-3xl font-bold tracking-tight">
-              <span className="text-primary">Libre</span>jokes
-            </h1>
+            <div className="flex items-center gap-3">
+              <img 
+                src="https://cdn.poehali.dev/files/logo saita iopd.jpg" 
+                alt="Librejokes Logo" 
+                className="w-12 h-12 md:w-14 md:h-14 rounded-full object-cover border-2 border-primary"
+              />
+              <h1 className="font-heading text-2xl md:text-3xl font-bold tracking-tight">
+                <span className="text-primary">Libre</span>jokes
+              </h1>
+            </div>
             <nav className="hidden md:flex items-center gap-6">
               <button onClick={() => scrollToSection('catalog')} className="hover:text-primary transition-colors font-medium">
                 Товары
