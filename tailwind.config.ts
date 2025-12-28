@@ -19,7 +19,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['Rubik', 'sans-serif'],
+				sans: ['MingLiU', 'PMingLiU', 'monospace'],
 				heading: ['Montserrat', 'sans-serif'],
 			},
 			colors: {
