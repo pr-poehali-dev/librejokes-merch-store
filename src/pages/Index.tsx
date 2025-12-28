@@ -272,35 +272,82 @@ export default function Index() {
 
       <section id="contacts" className="py-16 scroll-mt-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">Контакты</h2>
-            
-            <div className="space-y-4">
-              <div className="flex items-center justify-center gap-3">
-                <Icon name="Mail" size={20} className="text-primary" />
-                <a href="mailto:hello@librejokes.ru" className="text-lg hover:text-primary transition-colors">
-                  hello@librejokes.ru
-                </a>
+          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-12 text-center">Контакты</h2>
+          
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
+            <div className="p-6 rounded-lg border-2 border-border text-center space-y-4">
+              <div className="w-20 h-20 mx-auto rounded-full bg-primary/10 flex items-center justify-center">
+                <Icon name="User" size={40} className="text-primary" />
               </div>
-              
-              <div className="flex items-center justify-center gap-3">
-                <Icon name="Phone" size={20} className="text-primary" />
-                <a href="tel:+79991234567" className="text-lg hover:text-primary transition-colors">
-                  +7 (999) 123-45-67
-                </a>
+              <div>
+                <h3 className="font-heading font-bold text-xl mb-1">Алексей Смирнов</h3>
+                <p className="text-sm text-primary mb-3">Арт-директор</p>
+                <div className="space-y-2 text-sm">
+                  <a href="mailto:alexey@librejokes.ru" className="flex items-center justify-center gap-2 hover:text-primary transition-colors">
+                    <Icon name="Mail" size={16} />
+                    alexey@librejokes.ru
+                  </a>
+                  <a href="tel:+79991234567" className="flex items-center justify-center gap-2 hover:text-primary transition-colors">
+                    <Icon name="Phone" size={16} />
+                    +7 (999) 123-45-67
+                  </a>
+                </div>
               </div>
+            </div>
 
-              <div className="flex items-center justify-center gap-4 pt-4">
-                <Button variant="outline" size="icon">
-                  <Icon name="Instagram" size={20} />
-                </Button>
-                <Button variant="outline" size="icon">
-                  <Icon name="Send" size={20} />
-                </Button>
-                <Button variant="outline" size="icon">
-                  <Icon name="MessageCircle" size={20} />
-                </Button>
+            <div className="p-6 rounded-lg border-2 border-border text-center space-y-4">
+              <div className="w-20 h-20 mx-auto rounded-full bg-primary/10 flex items-center justify-center">
+                <Icon name="User" size={40} className="text-primary" />
               </div>
+              <div>
+                <h3 className="font-heading font-bold text-xl mb-1">Мария Петрова</h3>
+                <p className="text-sm text-primary mb-3">Менеджер по продажам</p>
+                <div className="space-y-2 text-sm">
+                  <a href="mailto:maria@librejokes.ru" className="flex items-center justify-center gap-2 hover:text-primary transition-colors">
+                    <Icon name="Mail" size={16} />
+                    maria@librejokes.ru
+                  </a>
+                  <a href="tel:+79991234568" className="flex items-center justify-center gap-2 hover:text-primary transition-colors">
+                    <Icon name="Phone" size={16} />
+                    +7 (999) 123-45-68
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-6 rounded-lg border-2 border-border text-center space-y-4">
+              <div className="w-20 h-20 mx-auto rounded-full bg-primary/10 flex items-center justify-center">
+                <Icon name="User" size={40} className="text-primary" />
+              </div>
+              <div>
+                <h3 className="font-heading font-bold text-xl mb-1">Дмитрий Козлов</h3>
+                <p className="text-sm text-primary mb-3">Служба поддержки</p>
+                <div className="space-y-2 text-sm">
+                  <a href="mailto:support@librejokes.ru" className="flex items-center justify-center gap-2 hover:text-primary transition-colors">
+                    <Icon name="Mail" size={16} />
+                    support@librejokes.ru
+                  </a>
+                  <a href="tel:+79991234569" className="flex items-center justify-center gap-2 hover:text-primary transition-colors">
+                    <Icon name="Phone" size={16} />
+                    +7 (999) 123-45-69
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <p className="text-muted-foreground mb-4">Мы в социальных сетях</p>
+            <div className="flex items-center justify-center gap-4">
+              <Button variant="outline" size="icon">
+                <Icon name="Instagram" size={20} />
+              </Button>
+              <Button variant="outline" size="icon">
+                <Icon name="Send" size={20} />
+              </Button>
+              <Button variant="outline" size="icon">
+                <Icon name="MessageCircle" size={20} />
+              </Button>
             </div>
           </div>
         </div>
